@@ -21,7 +21,7 @@ print(most_occur)
 import pandas as pd
 df = pd.DataFrame(most_occur, columns = ['word', 'count'])
 
-# Plot in 
+# Plot in console
 import plotext as plt
 plt.bar(df['word'], df['count'])
 plt.title("Most frequent word ")
