@@ -13,9 +13,8 @@ split_it = text.split()
 # Class Counter
 Counter = Counter(split_it)
 
-# Show Top 3 words
+# Get Top 3 words
 most_occur = Counter.most_common(3)
-print(most_occur)
 
 # Tuples to dataframe
 import pandas as pd
@@ -26,3 +25,4 @@ import plotext as plt
 plt.bar(df['word'], df['count'])
 plt.title("Most frequent word ")
 plt.show()
+print(most_occur)
