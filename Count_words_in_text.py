@@ -16,3 +16,13 @@ Counter = Counter(split_it)
 # Show Top 3 words
 most_occur = Counter.most_common(3)
 print(most_occur)
+
+# Tuples to dataframe
+import pandas as pd
+df = pd.DataFrame(most_occur, columns = ['word', 'count'])
+
+# Plot in 
+import plotext as plt
+plt.bar(df['word'], df['count'])
+plt.title("Most frequent word ")
+plt.show()
